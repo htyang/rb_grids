@@ -1,0 +1,28 @@
+#=====================================
+#== config setting ==================
+#=====================================
+
+
+invest: #general setting
+  sym: "DOGE"
+  budget: 600
+  lb: .068 #lower bound
+  up: .074 #upper bound
+  n_intervals: 20 #number of intervals
+  user_name: ""
+  user_pd: ""
+  store_login_token: True
+  token_expire_time: 60 #unit as minute
+
+exec: #action setting
+  fake_open_position: True #if you already have a position, set it as true
+  fake_action: True #fake the action, dont buy or sell in real. The action list won't updated too.
+  open_position_price: .08 #open the position if the price is lower than this value (Can set up as None)
+
+prog: #program setting
+  qrange_min: 0.1 #randomized query time range (at least), unit as minute 
+  qrange_max: 0.6 #randomized query time range (at most), unit as minute 
+  info_level: "info" #levels of the detail in printed information: debug> info> simple
+#=====================================
+#== config setting end===============
+#=====================================
